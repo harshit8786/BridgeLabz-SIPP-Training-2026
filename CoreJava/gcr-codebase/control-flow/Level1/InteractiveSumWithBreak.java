@@ -1,0 +1,20 @@
+import java.util.*;
+public class InteractiveSumWithBreak {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double total=0.0;
+        double userInput;
+
+        while (true) {
+            System.out.print("Enter a number (0 or negative to stop): ");
+            userInput=sc.nextDouble();
+            if (userInput <= 0) {
+                break;
+            }
+            total+=userInput;
+        }
+
+        System.out.println("The sum of the numbers entered is: " + total);
+        sc.close();
+    }
+}

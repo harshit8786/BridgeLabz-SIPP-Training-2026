@@ -1,0 +1,14 @@
+import java.util.*;
+public class InteractiveDiscount{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the original price of the course: ");
+        int fee=sc.nextInt();
+        System.out.print("Enter the discount percentage: ");
+        int discountPercent=sc.nextInt();
+        int discountAmount=(fee*discountPercent)/100;
+        int discountedPrice=fee-discountAmount;
+        System.out.println("The discount amount is INR "+discountAmount+" and final discounted fee is INR "+discountedPrice);
+        sc.close();
+    }
+}
