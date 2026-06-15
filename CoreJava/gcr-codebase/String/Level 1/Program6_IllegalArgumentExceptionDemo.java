@@ -1,0 +1,1 @@
+public class Program6_IllegalArgumentExceptionDemo {}
